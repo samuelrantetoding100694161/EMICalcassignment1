@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/calculate"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/yellow"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/principalamount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:digits="0123456789."
+        android:ems="10"
+        android:hint="@string/hint_principal"
+        android:inputType="number"
+        android:minHeight="48dp"
+        android:singleLine="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.094" />
+
+    <EditText
+        android:id="@+id/interestrate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:digits="0123456789."
+        android:ems="10"
+        android:hint="@string/hint_interest"
+        android:inputType="number"
+        android:minHeight="48dp"
+        android:singleLine="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.202" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Amortization Period (years):"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.476"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.289" />
+
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/btn_dropdown"
+        android:spinnerMode="dropdown"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.342" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/teal_200"
+        android:text="Calculate EMI"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.448" />
+
+
+    <EditText
+        android:id="@+id/emi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_emi"
+        android:text="TextView"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.788" />
+
+    <EditText
+        android:id="@+id/totalinterest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_interest_total"
+        android:text="TextView"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.525"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.911" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
